@@ -1,29 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        task2();
+        task3();
 
     }
-    public static void task2 () {
-        int clientOS = 0;
-        int clientDeviceYear = 2015;
-        if (clientOS==1) {
-            if (clientDeviceYear>=2015){
-                System.out.println("Установите версию приложения для Android по ссылке");
-            }
-            else {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }
-
-
+    public static void task3 () {
+        int year = 1104;
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println("Год является весокосным");
         }
-        if (clientOS==0) {
-            if (clientDeviceYear>=2015) {
-                System.out.println("Установите версию приложения для IOS по ссылке");
-            }
-            else {
-                System.out.println("Установите облегченную версию приложения для IOS по ссылке");
-            }
+        else {
+            System.out.println("Год не является весокосным");
         }
-
     }
 }

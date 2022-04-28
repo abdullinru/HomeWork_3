@@ -4,7 +4,7 @@ public class Main {
 
     }
     public static void task2 () {
-        int clientOS = 1;
+        int clientOS = 0;
         int clientDeviceYear = 2015;
         if (clientOS==1) {
             if (clientDeviceYear>=2015){

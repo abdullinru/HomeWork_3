@@ -1,15 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-        task3();
+        task4();
 
     }
-    public static void task3 () {
-        int year = 1104;
-        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-            System.out.println("Год является весокосным");
+    public static void task4 () {
+        int deliveryDistance = 95;
+        int days = 0;
+        if (deliveryDistance < 20){
+            days = 1;
+            System.out.println("Потребуется дней: "+ days);
+        }
+        else if (deliveryDistance < 60){
+            days = 2;
+            System.out.println("Потребуется дней: "+ days);
         }
         else {
-            System.out.println("Год не является весокосным");
+            days = 3;
+            System.out.println("Потребуется дней: "+ days);
         }
     }
 }
